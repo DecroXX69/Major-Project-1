@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RockPaperScissor</title>
+    <link rel="stylesheet" href="Project1.css">
+    <script src="Project1.js" defer></script>
+</head>
+<body>
+    <div class="all hidden">
+    <div class="scoreboard">
+        <div class="title">
+            <ul style="margin: 0;">
+                <li><h1>ROCK</h1></li>
+                <li><h1>PAPER</h1></li>
+                <li><h1>SCISSORS</h1></li>
+            </ul>
+        </div>
+        <div class="score">
+            <div class="compScore">
+                <div class="stitle">COMPUTER <br>SCORE</div>
+                <div class="score-value" id="comp-score-value" style="color: black;">0</div>
+            </div>
+            <div class="userScore">
+                <div class="stitle">YOUR <br> SCORE</div>
+                <div class="score-value" id="user-score-value" style="color: black;">0</div>
+            </div>
+        </div>
+    </div>
+
+   
+    <div class="game">
+        <div class="line" id="line1"></div>
+        <div class="line" id="line2"></div>
+        <div class="line" id="line3"></div>
+       
+        <div class=" rock" id="fox">
+            <div class=" inner"><img src="./images/rock.png" alt="rock"></div>
+        </div>
+        <div class=" scissor" id="fox">
+            <div class=" inner"><img src="./images/scissor.png" style="width: 55px; height: 55px;" alt="scissor"></div>
+        </div>
+        <div class=" paper" id="fox">
+            <div class=" inner"><img src="./images/paper.png" alt="paper"></div>
+        </div>
+    </div> 
+     
+    <section class="results hidden">
+       <h3 class="results_heading">PC PICKED</h2>
+       <h3 class="results_heading">YOU PICKED</h2>
+       <div class="results_result user-result "></div>
+       <div class="results_winner hidden">
+        <h7 class="results_text"></h7>
+        <button class="play-again" id="play-again">PLAY AGAIN</button>
+       </div>
+       <div class="results_result comp-result"></div>
+
+    </section>
+    <div class="newbtn"><button class="new hidden"><span style="font-weight: 600; font-size: 20px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; letter-spacing: 2px;">RULES</span></button></div>
+    <div class="whole ">
+    <div class="lel hidden"><button id="rule-btn"><span style="font-weight: 600; font-size: 20px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; letter-spacing: 2px;">RULES</span></button></div>
+    <div class="next hidden"><button class="next-btn"><span style="font-weight: 600; font-size: 20px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; letter-spacing: 2px;">NEXT</span></button></div>
+    </div> 
+</div>
+    <div id="rulepage" style="display: none;">
+        <div class="white" id="whi">
+            <div class="red">
+                <div class="close" id="close1"></div>
+                <div class="close" id="close2"></div>
+            </div>
+        </div>
+
+        <div class="lol">
+            <div class="rules">
+                <div style="font-weight: 500; font-size: 30px; padding-top: 13px;">Game Rules</div>
+                <div class="custom-list">
+                    <ul class="list">
+                        <li><span style="color: white;">Rock beats scissors, scissors beat paper, and paper beats rock.</span></li><br>
+                        <li><span style="color: white;">Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</span></li><br>
+                        <li><span style="color: white;">Use rock, paper, scissors to settle minor decisions or simply play to pass the time</span></li><br>
+                        <li><span style="color: white;">If both players lay down the same hand, each player lays down another hand</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+     <div class="gret hidden" id="greet-section">
+    <section class="greet">
+        <div class="entire ">
+            <div><img src="./images/Group 5.png" alt=""></div>
+            <div class="cup"><img src="./images/Vector1.png" alt=""></div>
+            <div class="head"><h1>HURRAY!!</h1></div>
+            <div class="para"><p>YOU WON THE GAME</p>
+                <button class="play-again gbtn" id="greet-play-again">PLAY AGAIN</button>
+            </div>
+            <div class="newbtn"><button class="new-greet"><span style="font-weight: 600; font-size: 20px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; letter-spacing: 2px;">RULES</span></button></div>
+        </div>
+    </section>
+</div>
+</body>
+</html>
